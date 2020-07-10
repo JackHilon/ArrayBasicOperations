@@ -120,9 +120,9 @@ namespace ArrayBasicOperations
             try
             {
                 if (arry.Length % 2 != 0)
-                    throw new IndexOutOfRangeException();
+                    throw new FormatException();
             }
-            catch(Exception ex)
+            catch(FormatException ex)
             {
                 Console.WriteLine(ex.Message);
                 Console.WriteLine("please terminate the program and enter array with even length.");
